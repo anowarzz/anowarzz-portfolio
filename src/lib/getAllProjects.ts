@@ -14,7 +14,7 @@ export interface Project {
 export async function getAllProjects(): Promise<Project[]> {
   try {
     const response = await fetch(
-      "https://anowar-portfolio-server.vercel.app/projects"
+      "https://anowarzz-portfolio-backend.vercel.app/api/projects"
     );
 
     if (!response.ok) {

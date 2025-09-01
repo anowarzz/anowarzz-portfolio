@@ -5,7 +5,7 @@ import { Project } from "./getAllProjects";
 export async function getSingleProject(id: string): Promise<Project> {
   try {
     const response = await fetch(
-      `https://anowar-portfolio-server.vercel.app/projects/${id}`
+      `https://anowarzz-portfolio-backend.vercel.app/api/projects/${id}`
     );
 
     if (!response.ok) {
