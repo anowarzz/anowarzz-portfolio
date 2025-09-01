@@ -28,6 +28,8 @@ const MyProjects = () => {
     fetchProjects();
   }, []);
 
+  console.log(projects);
+
   if (loading) {
     return <LoadingSpinner fullScreen text="Loading Projects" />;
   }

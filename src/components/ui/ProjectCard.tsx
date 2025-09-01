@@ -27,7 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <div className="max-w-lg w-full group">
       <div className="bg-gray-900/95 backdrop-blur-sm border border-gray-700/50 shadow-xl   transition-all duration-300 ">
         {/* Project Image */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden h-48 md:h-64">
           <Image
             src={project.image}
             alt={project.title}
@@ -37,11 +37,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           {/* Project Type Badge */}
-          <div className="absolute top-4 left-4">
+          {/* <div className="absolute top-4 left-4">
             <span className="px-4 py-2 text-sm font-semibold text-white bg-myBlue/90 backdrop-blur-sm rounded-full border border-white/20 shadow-lg">
               {project.projectType}
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Content */}
