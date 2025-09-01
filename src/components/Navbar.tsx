@@ -1,6 +1,6 @@
 "use client";
 
-import navLogo from "@/assets/images/name-logo.svg";
+import navLogo from "@/assets/images/anowarzz.svg";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -19,14 +19,14 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/#projects", label: "Projects" },
+    { href: "/all-projects", label: "Projects" },
     { href: "/#contact", label: "Contact Me" },
     { href: "/#about", label: "About Me" },
     { href: "/blog", label: "Blog" },
   ];
 
   return (
-    <nav className="w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b z-50">
+    <nav className="w-full  backdrop-blur bg-white  border-b z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 sm:h-18 items-center justify-between">
           {/* Logo */}
