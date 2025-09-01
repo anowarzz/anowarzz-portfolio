@@ -1,6 +1,5 @@
 "use client";
 
-import bgPattern from "@/assets/images/bg_pattern.png";
 import {
   AnimatedSpan,
   Terminal,
@@ -14,24 +13,14 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with pattern and dark overlay */}
-      <div className="absolute inset-0">
-        {/* Background Pattern */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
-          style={{ backgroundImage: `url(${bgPattern}` }}
-        ></div>
-
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-slate-950 to-black"></div>
-
-        {/* Additional Darkening Layer */}
-        <div className="absolute inset-0 bg-black/50"></div>
-
-        {/* Subtle Effects */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.2),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.15),transparent_50%)]"></div>
-      </div>
+      {/* Indigo Cosmos Background with Top Glow */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.25), transparent 70%), #000000",
+        }}
+      />
 
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-7xl mx-auto">
