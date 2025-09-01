@@ -36,6 +36,7 @@ export const frontendSkills = [
   { name: "Bootstrap", icon: bootstrapIcon },
   { name: "JavaScript", icon: javascriptIcon },
   { name: "React", icon: reactIcon },
+  { name: "Redux", icon: reduxIcon },
   { name: "Next.js", icon: nextjsIcon },
   { name: "Tailwind CSS", icon: tailwindIcon },
   { name: "TypeScript", icon: typescriptIcon },
@@ -44,7 +45,7 @@ export const frontendSkills = [
 export const backendSkills = [
   { name: "Node.js", icon: nodejsIcon },
   { name: "Express.js", icon: expressIcon },
-  { name: "Redux", icon: reduxIcon },
+
 ];
 
 export const databaseSkills = [
