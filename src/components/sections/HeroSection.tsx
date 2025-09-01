@@ -109,7 +109,7 @@ const HeroSection = () => {
                 {/* Background glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-xl blur-3xl scale-110"></div>
 
-                <Terminal className="relative border-white/20 bg-black/50 backdrop-blur-sm text-white w-auto max-w-xs mx-auto">
+                <Terminal className="relative overflow-x-auto border-white/20 bg-black/50 backdrop-blur-sm text-white w-[350px] sm:w-full max-w-md mx-auto">
                   <TypingAnimation>&gt; whoami</TypingAnimation>
                   <AnimatedSpan className="text-green-400">
                     Anowar Hosen
