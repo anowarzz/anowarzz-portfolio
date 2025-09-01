@@ -12,7 +12,7 @@ import SkillCard from "../ui/skill-card";
 
 export default function Skills() {
   return (
-    <section className="min-h-screen w-full relative bg-black py-16">
+    <section className="w-full relative bg-black py-16">
       {/* Arctic Lights Background with Top Glow */}
       <div
         className="absolute inset-0 z-0"

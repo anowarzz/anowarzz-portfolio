@@ -37,7 +37,7 @@ const HeroSection = () => {
 
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                   Anowar{" "}
-                  <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+                  <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
                     Hosen
                   </span>
                 </h1>
@@ -73,11 +73,11 @@ const HeroSection = () => {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-row gap-2 justify-center lg:justify-start">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  className="w-fit bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 group"
                 >
                   <Link href="/#contact" className="flex items-center gap-2">
                     Get In Touch
@@ -89,7 +89,7 @@ const HeroSection = () => {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="border-2 border-white/50 text-white bg-black/20 hover:bg-white/10 hover:text-blue-600 hover:border-white/80 backdrop-blur-sm transition-all duration-300 group font-semibold"
+                  className="w-fit border-2 border-white/50 text-white bg-black/20 hover:bg-white/10 hover:text-blue-600 hover:border-white/80 backdrop-blur-sm transition-all duration-300 group font-semibold"
                 >
                   <a
                     href="https://drive.google.com/uc?export=download&id=1L91axf8PlFcvxvf1w7pQkncPGr89xCeB"
@@ -104,12 +104,12 @@ const HeroSection = () => {
             </div>
 
             {/* Terminal Section */}
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="relative">
+            <div className="relative flex justify-center">
+              <div className="relative flex justify-center">
                 {/* Background glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-xl blur-3xl scale-110"></div>
 
-                <Terminal className="relative border-white/20 bg-black/50 backdrop-blur-sm text-white max-w-md">
+                <Terminal className="relative border-white/20 bg-black/50 backdrop-blur-sm text-white w-auto max-w-xs mx-auto">
                   <TypingAnimation>&gt; whoami</TypingAnimation>
                   <AnimatedSpan className="text-green-400">
                     Anowar Hosen
