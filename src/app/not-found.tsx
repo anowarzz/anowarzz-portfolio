@@ -27,8 +27,8 @@ const NotFound = () => {
               Page Not Found
             </h2>
             <p className="text-lg text-white/70 mt-4 max-w-md mx-auto">
-              Oops! The page you're looking for seems to have wandered off into
-              the digital void.
+              Oops! The page you&apos;re looking for seems to have wandered off
+              into the digital void.
             </p>
           </div>
         </div>

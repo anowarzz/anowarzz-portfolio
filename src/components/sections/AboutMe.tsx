@@ -57,24 +57,24 @@ const AboutMe = () => {
             </h3>
 
             <p className="text-white/80 text-base leading-relaxed">
-              Hi! I'm Anowar from Cumilla, Bangladesh. I've got my Bachelor's
-              and Master's in Business Administration from National University
-              (CGPA 2.98 and 3.13). I Always loved exploring technologies and
-              learning about tech.
+              Hi! I&apos;m Anowar from Cumilla, Bangladesh. I&apos;ve got my
+              Bachelor&apos;s and Master&apos;s in Business Administration from
+              National University (CGPA 2.98 and 3.13). I Always loved exploring
+              technologies and learning about tech.
             </p>
 
             <p className="text-white/80 text-base leading-relaxed">
-              Started with just curiosity about websites and apps, now I'm
+              Started with just curiosity about websites and apps, now I&apos;m
               hooked on web development. Love writing code and solving problems.
-              Whether it's making beautiful interfaces or building the
-              behind-the-scenes stuff, it's all fun to me.
+              Whether it&apos;s making beautiful interfaces or building the
+              behind-the-scenes stuff, it&apos;s all fun to me.
             </p>
 
             <p className="text-white/80 text-base leading-relaxed">
               My business background helps me understand what clients really
-              need. I'm always learning new tech stuff - from AI to blockchain.
-              When I'm not coding, I'm probably reading about the latest trends
-              or thinking up new ideas.
+              need. I&apos;m always learning new tech stuff - from AI to
+              blockchain. When I&apos;m not coding, I&apos;m probably reading
+              about the latest trends or thinking up new ideas.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">

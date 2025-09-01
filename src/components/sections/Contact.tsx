@@ -64,8 +64,8 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="text-white/80 text-lg mb-12">
-            Let's work together! Send me a message and I'll get back to you as
-            soon as possible.
+            Let&apos;s work together! Send me a message and I&apos;ll get back
+            to you as soon as possible.
           </p>
 
           <form ref={form} onSubmit={sendEmail} className="space-y-6 relative">
