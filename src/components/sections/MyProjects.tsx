@@ -87,7 +87,7 @@ const MyProjects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <div
-              key={project.id}
+              key={project._id}
               className="flex justify-center"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
