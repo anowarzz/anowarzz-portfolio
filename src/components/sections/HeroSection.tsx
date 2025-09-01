@@ -12,7 +12,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative flex items-center justify-center pb-8 overflow-hidden">
       {/* Indigo Cosmos Background with Top Glow */}
       <div
         className="absolute inset-0 z-0"
