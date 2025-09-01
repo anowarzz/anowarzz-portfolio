@@ -10,7 +10,7 @@ export interface Project {
   details: string[];
   images: string[];
 }
-
+//  fetch all projects
 export async function getAllProjects(): Promise<Project[]> {
   try {
     const response = await fetch(
@@ -28,3 +28,5 @@ export async function getAllProjects(): Promise<Project[]> {
     throw error;
   }
 }
+
+

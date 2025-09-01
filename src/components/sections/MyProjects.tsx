@@ -90,13 +90,11 @@ const MyProjects = () => {
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl  font-bold text-white mb-6">
             My <span className="text-myBlue">Projects</span>
           </h2>
           <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Explore my portfolio of innovative web applications and full-stack
-            solutions. Each project showcases my passion for clean code, modern
-            design, and user experience.
+            Some Of My Notable Projects Include:
           </p>
         </div>
 
