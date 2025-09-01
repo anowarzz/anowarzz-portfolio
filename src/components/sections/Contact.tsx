@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import emailjs from "@emailjs/browser";
+import { Mail, Phone } from "lucide-react";
 import React, { useRef, useState } from "react";
 import Swal from "sweetalert2";
 
@@ -67,6 +68,33 @@ const Contact = () => {
             Let&apos;s work together! Send me a message and I&apos;ll get back
             to you as soon as possible.
           </p>
+
+          {/* Contact Information */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+            <div className="flex-1 flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 border border-white/20 text-center">
+              <div className="flex-shrink-0">
+                <Mail className="w-5 h-5 text-blue-400" />
+              </div>
+              <a
+                href="mailto:anowarhosen444@gmail.com"
+                className="text-white hover:text-blue-400 transition-colors font-medium"
+              >
+                anowarhosen444@gmail.com
+              </a>
+            </div>
+
+            <div className="flex-1 flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 border border-white/20 text-center">
+              <div className="flex-shrink-0">
+                <Phone className="w-5 h-5 text-blue-400" />
+              </div>
+              <a
+                href="tel:+8801612446397"
+                className="text-white hover:text-blue-400 transition-colors font-medium"
+              >
+                +880 1612 446397
+              </a>
+            </div>
+          </div>
 
           <form ref={form} onSubmit={sendEmail} className="space-y-6 relative">
             {isLoading && (
