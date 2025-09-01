@@ -1,3 +1,4 @@
+import AboutMe from "@/components/sections/AboutMe";
 import Education from "@/components/sections/Education";
 import HeroSection from "@/components/sections/HeroSection";
 import MyProjects from "@/components/sections/MyProjects";
@@ -10,6 +11,7 @@ export default function Home() {
       <Education />
       <Skills />
       <MyProjects />
+      <AboutMe />
     </main>
   );
 }
