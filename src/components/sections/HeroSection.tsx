@@ -115,10 +115,10 @@ const HeroSection = () => {
                     Anowar Hosen
                   </AnimatedSpan>
                   <TypingAnimation>
-                    &gt; echo "Welcome to my portfolio"
+                    &gt; echo &quot;Welcome to my portfolio&quot;
                   </TypingAnimation>
                   <AnimatedSpan className="text-blue-400">
-                    "Welcome to my portfolio"
+                    &quot;Welcome to my portfolio&quot;
                   </AnimatedSpan>
                   <TypingAnimation>&gt; cat skills.txt</TypingAnimation>
                   <AnimatedSpan className="text-yellow-400">
