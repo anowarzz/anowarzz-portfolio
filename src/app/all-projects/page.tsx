@@ -1,8 +1,8 @@
 "use client";
 
 import { ProjectCard } from "@/components/ui/ProjectCard";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { getAllProjects, Project } from "@/lib/getAllProjects";
-import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const AllProjects = () => {
@@ -38,10 +38,7 @@ const AllProjects = () => {
         />
         <div className="relative z-10 container mx-auto px-4">
           <div className="flex items-center justify-center min-h-[400px]">
-            <div className="text-center">
-              <Loader2 className="w-12 h-12 animate-spin text-blue-400 mx-auto mb-4" />
-              <p className="text-white/70 text-lg">Loading projects...</p>
-            </div>
+            <LoadingSpinner size="lg" text="Loading projects..." />
           </div>
         </div>
       </section>
@@ -93,9 +90,8 @@ const AllProjects = () => {
             All <span className="text-blue-400">Projects</span>
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Explore my complete portfolio of innovative web applications and
-            full-stack solutions. Each project showcases my passion for clean
-            code, modern design, and exceptional user experience.
+            List of the projects that showcase my skills and expertise in web
+            development:
           </p>
         </div>
 
@@ -103,7 +99,9 @@ const AllProjects = () => {
         {projects.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+              <div className="flex justify-center">
+                <ProjectCard key={project.id} project={project} />
+              </div>
             ))}
           </div>
         ) : (

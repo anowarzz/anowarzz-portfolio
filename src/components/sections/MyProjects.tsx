@@ -1,8 +1,9 @@
 "use client";
 
 import { ProjectCard } from "@/components/ui/ProjectCard";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { getAllProjects, Project } from "@/lib/getAllProjects";
-import { ArrowBigRight, Loader2 } from "lucide-react";
+import { ArrowBigRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -28,25 +29,7 @@ const MyProjects = () => {
   }, []);
 
   if (loading) {
-    return (
-      <section className="min-h-screen w-full relative bg-black py-16">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.15), transparent 70%), #000000",
-          }}
-        />
-        <div className="relative z-10 container mx-auto px-4">
-          <div className="flex items-center justify-center min-h-[400px]">
-            <div className="text-center">
-              <Loader2 className="w-12 h-12 animate-spin text-myBlue mx-auto mb-4" />
-              <p className="text-white/70 text-lg">Loading projects...</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
+    return <LoadingSpinner fullScreen text="Loading Projects" />;
   }
 
   if (error) {
