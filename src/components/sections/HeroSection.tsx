@@ -92,12 +92,12 @@ const HeroSection = () => {
                   className="border-2 border-white/50 text-white bg-black/20 hover:bg-white/10 hover:text-blue-600 hover:border-white/80 backdrop-blur-sm transition-all duration-300 group font-semibold"
                 >
                   <a
-                    href="https://drive.google.com/uc?export=download&id=1Znsdhg0u7l7vScL46RVsWwa8g-7it7hh"
+                    href="https://drive.google.com/uc?export=download&id=1L91axf8PlFcvxvf1w7pQkncPGr89xCeB"
                     download="anowar_resume.pdf"
                     className="flex items-center gap-2"
                   >
                     <Download className="w-4 h-4 group-hover:translate-y-[-2px] transition-transform" />
-                    Download CV
+                    Download Resume
                   </a>
                 </Button>
               </div>
