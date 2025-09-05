@@ -1,5 +1,6 @@
 export interface Project {
   _id: string;
+  id: number;
   title: string;
   image: string;
   projectType: string;
@@ -28,5 +29,3 @@ export async function getAllProjects(): Promise<Project[]> {
     throw error;
   }
 }
-
-

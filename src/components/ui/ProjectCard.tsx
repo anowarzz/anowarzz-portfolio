@@ -7,6 +7,7 @@ import Link from "next/link";
 
 interface Project {
   _id: string;
+  id: number;
   title: string;
   image: string;
   projectType: string;

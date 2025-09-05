@@ -16,7 +16,9 @@ const MyProjects = () => {
     const fetchProjects = async () => {
       try {
         const data = await getAllProjects();
-        setProjects(data);
+        // Sort by id and take only first 4 projects
+        const sortedProjects = data.sort((a, b) => (a.id || 0) - (b.id || 0)).slice(0, 4);
+        setProjects(sortedProjects);
       } catch (err) {
         setError("Failed to load projects");
         console.error("Error fetching projects:", err);
